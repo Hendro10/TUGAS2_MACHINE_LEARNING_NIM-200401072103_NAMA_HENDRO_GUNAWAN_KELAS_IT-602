@@ -54,7 +54,8 @@ rules = apriori(transactions = transactions, min_support = 0.003, min_confidence
 """7. Menampilkan Hasil Training"""
 
 results = list(rules)
-results: list
+for rule in results:
+  print(rule)
 
 """8. Merubah Dataset Ke Dalam Bentuk Kolom"""
 
@@ -69,11 +70,12 @@ resultsinDataFrame = pd.DataFrame(inspect(results), columns = ['Left Hand Side',
 
 """9. Melihat Hasil"""
 
-resultsinDataFrame: pd.DataFrame
+print(resultsinDataFrame)
 
 """10. Kesimpulan
 
-Berdasarkan hasil perhitungan menggunakan python di atas terdapat 19 (sembilan belas) macam pilihan, yaitu diantaranya: pembeli yang membeli (bubuk pengembang)kemungkinan akan membeli sugar (gula), pembeli yang membeli baking powder (bubuk pengembang) kemungkinan juga akan membeli  (krim kue), pembeli yang membeli  (daging sapi) kemungkinan akan membeli root vegetables (sayuran), pembeli yang membeli berries (buah beri) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli red/blushwine (anggur merah) kemungkinan akan membeli bottled beer (bir botol), pembeli yang membeli flour (tepung) kemungkinan akan membeli margarine (mentega), pembeli yang membeli flour (tepung) kemungkinan akan membeli sugar (gula), pembeli yang membeli flour (tepung) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli mustard (saus moster) kemungkinan akan membeli frankfurter (sosis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli fruit/vegetable juice (jus sayur/buah), pembeli yang membeli grape (anggur) kemungkinan akan membeli tropical fruit (buah tropis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli ham (daging babi yang dikeringkan), pembeli yang membeli ham (daging babi yang dikeringkan) kemungkinan akan membeli white bread (roti putih), pembeli yang membeli rice (beras) kemungkinan akan membeli root vegetables (sayuran), pembeli yang membeli sliced cheese (irisan keju) kemungkinan akan membeli sausage (sosis), dan pembeli yang membeli turkey (ayam kalkun) kemungkinan akan membeli tropical fruit (buah tropis).
+Berdasarkan hasil perhitungan menggunakan python di atas dapat disimpulkan bahwa: pembeli yang membeli baking powder
+ (bubuk pengembang) kemungkinan akan membeli sugar (gula), pembeli yang membeli baking powder (bubuk pengembang) kemungkinan juga akan membeli  (krim kue), pembeli yang membeli  (daging sapi) kemungkinan akan membeli root vegetables (sayuran), pembeli yang membeli berries (buah beri) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli red/blushwine (anggur merah) kemungkinan akan membeli bottled beer (bir botol), pembeli yang membeli flour (tepung) kemungkinan akan membeli margarine (mentega), pembeli yang membeli flour (tepung) kemungkinan akan membeli sugar (gula), pembeli yang membeli flour (tepung) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli mustard (saus moster) kemungkinan akan membeli frankfurter (sosis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli fruit/vegetable juice (jus sayur/buah), pembeli yang membeli grape (anggur) kemungkinan akan membeli tropical fruit (buah tropis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli ham (daging babi yang dikeringkan), pembeli yang membeli ham (daging babi yang dikeringkan) kemungkinan akan membeli white bread (roti putih), pembeli yang membeli rice (beras) kemungkinan akan membeli root vegetables (sayuran), pembeli yang membeli sliced cheese (irisan keju) kemungkinan akan membeli sausage (sosis), dan pembeli yang membeli turkey (ayam kalkun) kemungkinan akan membeli tropical fruit (buah tropis).
 
 Terima kasih
 """
