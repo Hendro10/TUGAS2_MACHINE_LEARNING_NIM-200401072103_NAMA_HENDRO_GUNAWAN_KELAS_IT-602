@@ -23,7 +23,7 @@ import pandas as pd
 from google.colab import drive
 drive.mount('/content/drive')
 
-dataset = pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Pertemuan11/Grocery_Store_DataSet.csv', header = None)
+dataset = pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Peretmuan16/Tugas2/Grocery_Store_DataSet.csv', header = None)
 transactions = []
 for i in range(0, 7501):
   transactions.append([str(dataset.values[i,j]) for j in range(0, 20)])
@@ -32,7 +32,7 @@ print(dataset)
 
 """3. Menampilkan Sebanyak 5 Data Teratas"""
 
-df= dataset = pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Pertemuan11/Grocery_Store_DataSet.csv', header = None)
+df= dataset = pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Peretmuan16/Tugas2/Grocery_Store_DataSet.csv', header = None)
 df.head(5)
 
 """4. Melihat Variabel dalam Dataset"""
@@ -75,7 +75,7 @@ print(resultsinDataFrame)
 """10. Kesimpulan
 
 Berdasarkan hasil perhitungan menggunakan python di atas dapat disimpulkan bahwa: pembeli yang membeli baking powder
- (bubuk pengembang) kemungkinan akan membeli sugar (gula), pembeli yang membeli baking powder (bubuk pengembang) kemungkinan juga akan membeli  (krim kue), pembeli yang membeli  (daging sapi) kemungkinan akan membeli root vegetables (sayuran), pembeli yang membeli berries (buah beri) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli red/blushwine (anggur merah) kemungkinan akan membeli bottled beer (bir botol), pembeli yang membeli flour (tepung) kemungkinan akan membeli margarine (mentega), pembeli yang membeli flour (tepung) kemungkinan akan membeli sugar (gula), pembeli yang membeli flour (tepung) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli mustard (saus moster) kemungkinan akan membeli frankfurter (sosis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli fruit/vegetable juice (jus sayur/buah), pembeli yang membeli grape (anggur) kemungkinan akan membeli tropical fruit (buah tropis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli ham (daging babi yang dikeringkan), pembeli yang membeli ham (daging babi yang dikeringkan) kemungkinan akan membeli white bread (roti putih), pembeli yang membeli rice (beras) kemungkinan akan membeli root vegetables (sayuran), pembeli yang membeli sliced cheese (irisan keju) kemungkinan akan membeli sausage (sosis), dan pembeli yang membeli turkey (ayam kalkun) kemungkinan akan membeli tropical fruit (buah tropis).
+ (bubuk pengembang) kemungkinan akan membeli sugar (gula), pembeli yang membeli baking powder (bubuk pengembang) kemungkinan juga akan membeli  (krim kue), pembeli yang membeli beef (daging sapi) kemungkinan akan membeli root vegetables (sayuran berakar), pembeli yang membeli berries (buah beri) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli liquor (minuman beralkohol) kemungkinan akan membeli bootled beer (bir botol), pembeli yang membeli red/blushwine (anggur merah) kemungkinan akan membeli bottled beer (bir botol), pembeli yang membeli flour (tepung) kemungkinan akan membeli margarine (mentega), pembeli yang membeli flour (tepung) kemungkinan akan membeli sugar (gula), pembeli yang membeli flour (tepung) kemungkinan akan membeli whipped/sour cream (krim kue), pembeli yang membeli mustard (saus moster) kemungkinan akan membeli frankfurter (sosis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli fruit/vegetable juice (jus sayur/buah), pembeli yang membeli grapes (anggur) kemungkinan akan membeli tropical fruit (buah tropis), pembeli yang membeli processed cheese (keju) kemungkinan akan membeli ham (daging babi yang dikeringkan), pembeli yang membeli ham (daging babi yang dikeringkan) kemungkinan akan membeli white bread (roti putih), pembeli yang membeli herbs (tanaman herba) kemungkinan akan membeli root vagetables (sayuran akar), pembeli yang membeli rice (beras) kemungkinan akan membeli root vegetables (sayuran berakar), pembeli yang membeli sliced cheese (irisan keju) kemungkinan akan membeli sausage (sosis), dan pembeli yang membeli turkey (ayam kalkun) kemungkinan akan membeli tropical fruit (buah tropis).
 
 Terima kasih
 """
