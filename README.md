@@ -788,7 +788,9 @@ Biodata Penulis
 Hendro Gunawan, lahir di Jakarta, pada tanggal 1 Januari 1981. Menyelesaikan pendidikan Taman Kanak-Kanak (TK) dan Sekolah Dasar (SD) di Desa Sumber Sari Kecamatan Sine Kabupaten Ngawi Jawa Timur, kemudian Sekolah Menengah Pertama (SMP), dan Sekolah Menengah Atas (SMA) di kabupaten Muara Enim Provinsi Sumatra Selatan. Saat ini sedang menempuh pendidikan S1 jurusan PJJ Informatika di Universitas Siber Asia (UNSIA) Jakarta. Selain sebagai mahasiswa, penulis juga aktif sebagai karyawan di PT Indospring Tbk. Penulis juga menyukai bahasa pemrograman PHP, Java, Lua, dan Python. Dengan membaca makalah ini penulis berharap dapat menambah pengetahuan dan skill dalam bidang pembelajaran Machine Learning, terutama mengenai Aturan Assosiasi (Algoritma Apriori).
 Penulis dapat dihubungi melalui:
 Telp          : 081259640815
-Email         : hendro.gnwn@gmail.com, hendro.gnwn@outlook.com, hendro.gnwn@ymail.com
+Email         : hendro.gnwn@gmail.com, 
+hendro.gnwn@outlook.com, 
+hendro.gnwn@ymail.com
 		
 Link File
 
