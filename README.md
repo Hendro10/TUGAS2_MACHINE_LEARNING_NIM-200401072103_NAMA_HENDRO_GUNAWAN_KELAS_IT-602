@@ -17,7 +17,7 @@ Laporan penelitian ini merupakan Tugas 2 dari mata kuliah Machine Learning yang 
 
                                                                                                                     Penulis
 														    
-														 Hendro Gunawan
+														     Hendro Gunawan
                                                                                                                                                       
 Daftar Isi
 Kata Pengantar .........................................................................................................................i
