@@ -81,11 +81,15 @@ PENDAHULUAN
 
 Halo para pembaca yang budiman, ini adalah laporan penelitian tentang machine learning. Di dalam laporan penelitian ini kita akan belajar tentang machine learning secara sebagian. Karena laporan penelitian ini hanya menjelaskan tentang Unsupervised Learning khususnya membahas tentang Aturan Asosiasi (Algoritma Apriori) beserta implementasinya dengan menggunakan perhitungan Python. Di sini saya akan membagikan ilmu saya kepada teman-teman bagaimana cara mengolah dataset dengan menggunakan aplikasi Google Collab dengan menggunakan bahasa pemrograman Python. 
 Pada dasarnya, machine learning digunakan untuk menggantikan manusia dalam mengambil keputusan. Karena machine learning tidak memiliki perasaan, maka keputusan yang akan diambil berdasarkan data yang sudah diolah, kemudian data tersebut akan diekstraksi pengetahuannya dan didapatkan hasil yang sesuai. Jadi memahami machine learning secara umum itu sama seperti tugas manusia yang digantikan oleh machine. Jika kita  bisa memprediksikan siapa yang akan terpilih menjadi calon presiden Indonesia di tahun 2024 dengan rumus secara manual, maka machine learning juga dapat melakukan hal tersebut. Jika manusia bisa mengklasifikasikan buah-buahan mana yang mentah dan mana yang matang, maka machine learning juga bisa melakukan hal yang sama. Jika manusia bisa mengelompokkan dokumen berdasarkan kategori-kategori yang ada, maka machine learning pun juga bisa melakukan hal yang sama.
+
 1.1 Latar Belakang Masalah
+
 Secara umum machine learning artinya pembelajaran mesin, pada awalnya manusia belajar untuk hal yang belum diketahui. Seperti anak kecil yang bertanya kepada ibunya tentang suatu benda, maka ibunya akan memberi informasi terkait benda tersebut. Saat anak kecil itu bermain sendirian dan menemukan benda yang mirip dengan benda yang sebelumnya, maka anak tersebut akan dengan mudah mengenali benda itu dan menyebutkan nama benda tersebut sesuai dengan informasi yang ia dapatkan sebelumnya. Machine learning meniru cara belajar manusia sehingga yang dihasilkan adalah pengetahuan, bukan sekedar informasi.
 Ada suatu perusahaan yang memiliki data transaksi tahun 2010 dan tahun 2011. Data tahun 2010 itu lebih kecil penjualannya daripada data transaksi tahun 2011, sebab berisi informasi bahwa ada kenaikan penjualan dari tahun sebelumnya. Ini adalah sebatas informasi saja, karena informasi tersebut dapat dengan mudah diperoleh berdasarkan data yang dijumlahkan setiap tahun dan dibandingkan dengan tahun tahun sebelumnya. 
 Atau pada kasus lain, ada data transaksi dari suatu minimarket yaitu data transaksi mie instan, coklat, dan telur. Misalnya kita hanya ingin mengambil informasi, maka kita bisa dengan mudahnya melihat berapa jumlah mie instan, coklat dan telur yang terjual. Namun kita tidak bisa menemukan pola berapa persen orang yang membeli mie instan dan juga coklat, dan berapa persen orang yang membeli ketiganya sekaligus?
+
 1.2 Rumusan Masalah
+
 Dengan melihat latar belakang masalah yang telah dikemukakan maka, beberapa masalah yang dapat penulis rumuskan dan akan dibahas dalam laporan penelitian ini adalah:
 1. Apakah aturan asosiasi (algoritma apriori) itu?
 2. Apakah cara kerja algoritma apriori itu?
@@ -97,17 +101,29 @@ Tujuan dan manfaat penelitian yang ingin dicapai adalah:
 2. Mengetahui bagaimana cara kerja algoritma apriori?
 3. Mengetahui bagaimana manfaat aturan asosiasi bagi manajer?
 4. Mengetahui bagaimana memprediksi kemunculan suatu itemset?
+
 1.4 Metode Penelitian
+
 Tahapan percobaan dalam penelitian ini yaitu pertama melakukan pengumpulan data dengan cara browsing di internet seperti aplikasi Edge, Google Search, Microsoft Bing, dan Youtube. Untuk file datasetnya peneliti menggunakan dataset dari Kaggle yaitu Grocery_Store_Dataset.csv yang dapat di download secara gratis di halaman website berikut ini https://www.kaggle.com/datasets/irfanasrullah/groceries. Di sini peneliti memilih metode Unsupervised Learning dengan menggunakan Algoritma Apriori untuk mengolah dan memproses dataset. Tools yang digunakan dalam penelitian ini yaitu aplikasi Google Collab, Python versi 3.5, Portable Computer (PC) dengan spesifikasi yang digunakan  yaitu CPU Intel® Core ™ i9-12900KF LGA 1700 yang berjalan pada 3.19 GHz dan GPU NVIDIA G-Force GTX 1650 OC Edition 4GB DUAL, dengan RAM terinstal 24GB, sistem operasi 64-bit, dengan spesifikasi windows 11 Pro Insider Preview. Versi 22H2, Build OS 23493.1000. 
+
 1.5 Sistematika Penulisan 
+
 Dalam penyusunan laporan penelitian ini terdiri dari hal-hal yang saling berkaitan antara bab I sampai dengan bab IV yang memuat beberapa isi sebagai berikut:
+
 BAB I Pendahuluan
+
 Membahas tentang latar belakang masalah, rumusan masalah, tujuan dan manfaat penelitian, metode penelitian,  dan sistematika penulisan.
+
 BAB II Tinjauan Pustaka
+
 Membahas tinjauan tentang aturan asosiasi (algoritma apriori) beserta pengertiannya, membahas tinjauan tentang cara kerja algoritma apriori beserta pengertiannya, membahas tinjauan tentang aturan asosiasi dalam penjualan beserta pengertiannya, dan membahas tinjauan tentang aturan asosiasi dalam penjualan beserta penjelasannya.
+
 BAB III Hasil dan Pembahasan
+
 Membahas tentang apakah Algoritma Apriori Itu?, apakah Asosiasi (Algoritma Apriori) Itu?, apakah Cara Kerja Algoritma Apriori Itu?, apakah Aturan Asosiasi dalam Penjualan Itu?, apakah Association Rule Mining Itu?
+
 BAB IV Penutup
+
 Membahas tentang kesimpulan, saran, ucapan terima kasih dan daftar pustaka.
 
 BAB II
@@ -144,11 +160,13 @@ Aturan asosiasi yang didefinisikan pada basket data tersebut, dapat digunakan un
 2. proses pembuatan keputusan bisnis,
 3. segmentasi konsumen dan
 4. target pemasaran.
+
 2.4 Tinjauan Tentang Association Rule Mining
    
 2.4.1 Pengertian Association Rule Mining
 
 Association Rule Mining, atau penambangan aturan asosiasi, adalah teknik dalam bidang analisis data dan data mining yang bertujuan untuk menemukan hubungan atau pola asosiasi antara item atau atribut dalam dataset transaksi. Tujuan utama dari Association Rule Mining adalah untuk mengidentifikasi aturan asosiasi yang kuat atau relevan, yang dapat memberikan wawasan dan informasi yang berharga untuk pengambilan keputusan bisnis, pemasaran, dan rekomendasi produk.
+
 Berikut adalah pengertian Association Rule Mining menurut beberapa ahli:
 	
 Jiawei Han dan Micheline Kamber dalam buku "Data Mining: Concepts and Techniques" mendefinisikan “Association rules are mined in a two-step process consisting of frequent itemset mining followed by rule generation”. Association Rule Mining sebagai teknik untuk menemukan semua aturan asosiasi menarik atau kuat antara item-item dalam kumpulan transaksi.
