@@ -450,10 +450,10 @@ Keterangan kode:
 import numpy as np, berfungsi untuk memudahkan operasi perhitungan tipe data numerik seperti penjumlahan, perkalian, pengurangan, pemangkatan dan operasi aritmatika lainnya.
 import matplotlib.pyplot as plt, memanggil library matplotlib untuk membuat chart atau grafik.
 import pandas as pd, bisa digunakan untuk mengubah dimensi data, membuat tabel, memeriksa data, membaca data dan lain sebagainya.
-3.16.3 Pra Proses Data
-Sebelum melakukan proses data, terlebih dahulu kita harus menyiapkan data kita berupa file yang letaknya berada di dalam folder Google Drive kita supaya nanti dapat terhubung dengan aplikasi Google Collab. Code programnya adalah sebagai berikut.
 
-# Mounted At/Content/Drive
+3.16.3 Pra Proses Data
+
+Sebelum melakukan proses data, terlebih dahulu kita harus menyiapkan data kita berupa file yang letaknya berada di dalam folder Google Drive kita supaya nanti dapat terhubung dengan aplikasi Google Collab. Code programnya adalah sebagai berikut.
 
 from google.colab import drive
 drive.mount('/content/drive')
