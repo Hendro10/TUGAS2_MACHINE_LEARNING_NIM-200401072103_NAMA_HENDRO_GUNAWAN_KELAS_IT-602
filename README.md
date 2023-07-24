@@ -789,7 +789,9 @@ Hendro Gunawan, lahir di Jakarta, pada tanggal 1 Januari 1981. Menyelesaikan pen
 Penulis dapat dihubungi melalui:
 Telp          : 081259640815
 Email         : hendro.gnwn@gmail.com
+
                 hendro.gnwn@outlook.com
+		
                 hendro.gnwn@ymail.com
 		
 Link File
