@@ -114,10 +114,15 @@ BAB II
 TINJAUAN PUSTAKA
 
 2.1 Tinjauan Tentang Aturan Asosiasi (Algoritma Apriori) 
+
 2.1.1 Pengertian Aturan Asosiasi (Algoritma Apriori)
+
 Algoritma Apriori adalah algoritma yang digunakan untuk menghitung aturan asosiasi antar objek. Aturan asosiasi menjelaskan bagaimana dua atau lebih objek terkait satu sama lain. Dengan kata lain, algoritma apriori adalah algoritma berbasis aturan asosiasi yang menganalisis apakah orang yang membeli produk A juga membeli produk B. Algoritma ini dikemukakan oleh ilmuwan R. Agrawal dan Srikant pada tahun 1994. Algoritma ini kebanyakan digunakan untuk analisis keranjang belanja dan membantu menemukan produk yang dapat dibeli bersama. Apriori juga dapat digunakan di bidang perawatan kesehatan untuk menemukan reaksi obat untuk pasien. Pada data mining, algoritma Apriori banyak digunakan untuk menemukan data yang paling sering muncul dalam sebuah database. Item data transaksi pada database membentuk itemset. Itemset yang paling sering muncul dipilih oleh algoritma Apriori agar dapat digunakan untuk menentukan aturan asosiasi yang menyoroti trend umum dalam database.
+
 2.2 Tinjauan Tentang Cara Kerja Algoritma Apriori
+
 2.2.1 Pengertian Cara Kerja Algoritma Apriori
+
 Algoritma Apriori bekerja untuk menemukan aturan asosiasi yang relevan dalam dataset transaksi. Aturan asosiasi adalah aturan yang menunjukkan hubungan antara satu set item dengan item lainnya dalam transaksi. Misalnya, jika seseorang membeli roti, maka kemungkinan besar dia juga akan membeli mentega. Algoritma Apriori membantu mengidentifikasi asosiasi semacam itu berdasarkan dukungan (support) dan kepercayaan (confidence) dari kombinasi item.
 Berikut adalah langkah-langkah utama cara kerja algoritma Apriori:
 Hitung Dukungan (Support): Dukungan (support) adalah seberapa sering sebuah itemset (kombinasi beberapa item) muncul dalam dataset transaksi. Dukungan dihitung sebagai jumlah transaksi yang mengandung itemset tersebut dibagi dengan total jumlah transaksi. Itemset dengan dukungan di atas ambang batas (min_support) akan dipertimbangkan sebagai kandidat untuk aturan asosiasi.
@@ -127,8 +132,11 @@ Hitung Kepercayaan (Confidence): Kepercayaan (confidence) adalah seberapa sering
 Pilih Aturan Asosiasi: Aturan asosiasi yang relevan akan dipilih berdasarkan ambang batas dukungan (min_support) dan ambang batas kepercayaan (min_confidence). Aturan asosiasi yang memenuhi kedua kriteria ini dianggap cukup kuat dan relevan dalam dataset transaksi.
 Iterasi Lanjutan: Proses perhitungan dukungan, itemset kandidat, dan kepercayaan berlanjut hingga tidak ada itemset kandidat baru yang memenuhi ambang batas dukungan (min_support) atau tidak ada aturan asosiasi baru yang memenuhi ambang batas kepercayaan (min_confidence).
 Dengan cara ini, algoritma Apriori secara iteratif mencari itemset dan aturan asosiasi yang kuat dalam dataset transaksi. Dengan mengidentifikasi asosiasi antara item, algoritma Apriori membantu kita memahami pola pembelian dan preferensi pelanggan dalam data transaksi sehingga dapat digunakan untuk pengambilan keputusan bisnis, pemasaran, dan rekomendasi produk.
+
 2.3 Tinjauan Tentang Aturan Asosiasi dalam Penjualan
+
 2.3.1 Pengertian Aturan Asosiasi dalam Penjualan
+
 Association Rules adalah proses mendeteksi kumpulan atribut-atribut yang muncul bersamaan (co-occur) dalam frekuensi yang sering, dan membentuk sejumlah kaidah dari kumpulan-kumpulan tersebut. Contoh: 90% orang yang berbelanja di suatu supermarket yang membeli roti juga membeli selai, dan 60% dari semua orang yang berbelanja membeli keduanya. 
 Association rule mining adalah analisa dari kebiasaan belanja konsumen dengan mencari asosiasi dan korelasi antara item-item berbeda yang diletakkan konsumen dalam keranjang belanjanya. Contoh association rule misalnya: “70 % dari orang yang membeli mie, juice dan saus akan membeli juga roti tawar”. Dengan kemajuan teknologi, data penjualan dapat disimpan dalam jumlah besar yang disebut dengan “basket data”.
 Aturan asosiasi yang didefinisikan pada basket data tersebut, dapat digunakan untuk menganalisa data dalam rangka:
@@ -137,7 +145,9 @@ Aturan asosiasi yang didefinisikan pada basket data tersebut, dapat digunakan un
 3. segmentasi konsumen dan
 4. target pemasaran.
 2.4 Tinjauan Tentang Association Rule Mining
+   
 2.4.1 Pengertian Association Rule Mining
+
 Association Rule Mining, atau penambangan aturan asosiasi, adalah teknik dalam bidang analisis data dan data mining yang bertujuan untuk menemukan hubungan atau pola asosiasi antara item atau atribut dalam dataset transaksi. Tujuan utama dari Association Rule Mining adalah untuk mengidentifikasi aturan asosiasi yang kuat atau relevan, yang dapat memberikan wawasan dan informasi yang berharga untuk pengambilan keputusan bisnis, pemasaran, dan rekomendasi produk.
 Berikut adalah pengertian Association Rule Mining menurut beberapa ahli:
 	
@@ -156,6 +166,7 @@ HASIL DAN PEMBAHASAN
 3.1 Apakah Asosiasi (Algoritma Apriori) Itu?
  
 Gambar 1. Ilustrasi metode apriori
+
 Aturan asosiasi (association rules) sering disebut sebagai analisis afinitas (affinity analysis) atau analisis pertalian. Aturan asosiasi merupakan studi mengenai ‘apa bersama apa’ atau “sesuatu memiliki pertalian dengan sesuatu”. Misalnya saat seseorang belanja di supermarket, jika seseorang membeli susu bayi biasanya seseorang juga membeli diapers, dapat dikatakan susu bayi bersama diapers atau susu bayi memiliki pertalian dengan diapers. Karena studi ini diawali pada database transaksi pelanggan, maka studi ini juga disebut “market basket analysis”.
 Algoritma apriori adalah sebuah algoritma klasik pada data mining. Algoritma ini menggunakan frequent itemset untuk menghasilkan aturan asosiasi. Hal ini berdasarkan konsep bahwa subset dari frequent itemset. Lalu, apa itu frequent item set?
 Frequent item set merupakan nilai item set minimum yang muncul di himpunan seluruh transaksi (transaksi 1, transaksi 2, transaksi 3, dan seterusnya) atau disebut juga minimum support. Selain frequent item set, terdapat beberapa terminologi atau istilah lain yang perlu kita pahami pada algoritma apriori seperti:
@@ -192,7 +203,9 @@ Aturan ini dihitung dari sifat probabilistik yang dimiliki oleh data yang ada.
 3.4 Association Rule Mining
    
 Jika diberikan sekumpulan data transaksi, tentukan suatu aturan yang akan memprediksi kemunculan suatu item berdasar kemunculan item yang lain dalam transaksi tersebut. 
+
 Tabel 1. Market-Basket transactions
+
 TID 	Items 
 1 	Bread, Milk 
 2 	Bread, Diaper, Beer, Eggs 
@@ -229,7 +242,9 @@ Support (s)
 - Pecahan transaksi yang terdiri dari kedua item X dan Y
 Confidence (c)
 - Ukuran seberapa sering item dalam y muncul dalam transaksi yang terdiri dari X.
+- 
 Tabel 2. Market-Basket transactions
+
 TID 	Items 
 1 	Bread, Milk 
 2 	Bread, Diaper, Beer, Eggs 
@@ -255,6 +270,7 @@ Computationally prohibitive!
 3.7 Mining Association Rules
 
 Tabel 3. Market-Basket transactions
+
 TID 	Items 
 1 	Bread, Milk 
 2 	Bread, Diaper, Beer, Eggs 
@@ -386,6 +402,7 @@ Untuk lebih memahami cara apriori, kita akan menggunakan kasus dengan Python. Da
 3.16.1 Install Apyori
 
 Langkah pertama yang harus kita lakukan adalah menginstal apyori terlebih dahulu hal ini bertujuan supaya aplikasi yang kita jalankan berjalan dengan sukses, yaitu dengan cara mengetikkan program python sebagai berikut.
+
 !pip install apyori
 
 Collecting apyori
@@ -398,9 +415,13 @@ Stored in directory: /root/.cache/pip/wheels/c4/1a/79/20f55c470a50bb3702a8cb7c94
 Successfully built apyori
 Installing collected packages: apyori
 Successfully installed apyori-1.1.2
+
 Keterangan kode:
+
 !pip install apyori,  berfungsi untuk menginstall paket Python bernama “apyori” menggunakan pip (Python Package Installer). Paket “apyori” adalah implementasi dari algoritma apriori yang digunakan untuk menemukan asosiasi dalam dataset yang berisi kumpulan itemset.
+
 3.16.2 Import Library
+
 Library yang digunakan pada kasus ini diantaranya adalah: numpy, matplotlib, dan pandas. Berikut adalah kode programnya.
 import numpy as np
 import matplotlib.pyplot as plt
@@ -413,7 +434,9 @@ import matplotlib.pyplot as plt, memanggil library matplotlib untuk membuat char
 import pandas as pd, bisa digunakan untuk mengubah dimensi data, membuat tabel, memeriksa data, membaca data dan lain sebagainya.
 3.16.3 Pra Proses Data
 Sebelum melakukan proses data, terlebih dahulu kita harus menyiapkan data kita berupa file yang letaknya berada di dalam folder Google Drive kita supaya nanti dapat terhubung dengan aplikasi Google Collab. Code programnya adalah sebagai berikut.
+
 # Mounted At/Content/Drive
+
 from google.colab import drive
 drive.mount('/content/drive')
 
@@ -427,6 +450,7 @@ drive.mount(‘/content/drive’), digunakan untuk mengakses file dan folder di 
 3.16.4 Memanggil Dataset
 
 Berikut adalah kode program untuk memanggil Grocery_Store_Dataset.csv, yang ada di folder Google drive kita dan kemudian memasukkannya ke dalam variabel dataset.
+
 dataset = pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Peretmuan16/Tugas2/Grocery_Store_Dataset.csv', header = None)
 transactions = []
 for i in range(0, 7501):
@@ -440,7 +464,9 @@ for i in range(0, 7501): Ini adalah loop for yang akan berjalan dari 0 hingga 75
 transactions.append(...): Ini adalah fungsi untuk menambahkan data ke dalam daftar transactions. Baris kode ini akan dijalankan pada setiap iterasi loop, sehingga data akan ditambahkan ke daftar transactions dalam setiap iterasi.
 [str(dataset.values[i,j]) for j in range(0, 20)]: Bagian ini adalah list comprehension, yang berarti akan menghasilkan daftar baru berdasarkan ekspresi yang diberikan. Di sini, kita sedang membuat daftar dengan melakukan iterasi melalui kolom-kolom (diasumsikan 20 kolom) dalam dataset pada baris ke-i. Fungsi str() digunakan untuk mengkonversi nilai menjadi string, karena item dalam daftar transactions biasanya perlu berupa string (seperti dalam implementasi algoritma Apriori).
 Jadi , tujuan dari kode tersebut adalah untuk mengambil nilai dari dataset (DataFrame) pada setiap baris dan mengubahnya menjadi bentuk daftar yang kemudian ditambahkan ke dalam variabel ‘transaction’. Hal ini akan berguna ketika Anda ingin menggunakan dataset ini sebagai input untuk analisis asosiasi data menggunakan algoritma seperti Apriori. Dengan menggunakan variabel ‘transaction’ yang dihasilkan dari kode ini, Anda dapat memproses dataset transaksi tersebut lebih lanjut untuk menemukan pola asosiasi atau itemset yang sering muncul bersama dalam transaksi.
+
 3.16.5 Melihat Isi Dataset
+
 Perintah berikut digunakan untuk menampilkan seluruh isi dari dataset.
 print(dataset)
 
@@ -497,12 +523,15 @@ print(dataset)
 9835      NaN      NaN      NaN      NaN      NaN  
 
 [9836 rows x 33 columns]
+
 Keterangan kode:
+
 Perintah ‘print (dataset)’ digunakan untuk mencetak isi dari variabel ‘dataset’ ke output konsol atau layer. Saat dijalankan, perintah ini akan menampilkan isi dari objek yang disimpan dalam variabel ‘dataset’ ke layar.
  
 3.16.6 Menampilkan Sebanyak 5 Data Teratas
 
 Untuk melihat dan menampilkan lima data teratas, berikut adalah kode programnya.
+
 df= dataset = pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Peretmuan16/Tugas2/Grocery_Store_Dataset.csv', header = None)
 df.head(5)
 
@@ -513,20 +542,26 @@ df.head(5)
 3	1	whole milk	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	...	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
 4	4	pip fruit	yogurt	cream cheese	meat spreads	NaN	NaN	NaN	NaN	NaN	...	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN	NaN
 5 rows × 33 columns
+
 Keterangan kode:
+
 df=dataset=pd.read_csv('/content/drive/MyDrive/KuliahUNSIA/Semester5/MachineLearning/Pertemuan16/Tugas2/Grocery_Store_Dataset.csv', header = None), digunakan untuk mengubah dataset untuk divariabelkan menjadi ‘df’, sehingga jika ingin melihat isi dari dataset tersebut kita tinggal mengetikkan ‘df’ atau ‘dataset’ saja.
 df.head(5), digunakan untuk menampilkan sebanyak 5 data teratas.
  
 3.16.7 Melihat Variabel dalam Dataset
 
 Kita juga bisa menampilkan dictionary keys dari DataFrame dengan mengetikkan program sebagai berikut.
+
 df.keys()
 
 Int64Index([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], dtype='int64')
 Keterangan kode:
 df.keys(), digunakan untuk mendapatkan daftar (list) dari semua nama kolom yang ada dalam DataFrame ‘df’ pada library pandas.
+
 3.16.8 Melihat Shape
+
 Kita bisa menampilkan jumlah baris dan kolom dari dataset menggunakan kode program sebagai berikut.
+
 df.shape
 
 (9836, 33)
@@ -534,7 +569,9 @@ df.shape
 Keterangan kode:
 
 df.shape, digunakan untuk melihat berapa banyak baris dan kolom yang ada dalam data set tersebut, dengan kata lain yaitu df.shape digunakan untuk mendapatkan tuple yang berisi dimensi dari DataFrame ‘df’ pada library pandas. Tuple ini berisi dua nilai: jumlah baris dan jumlah kolom dalam DataFrame. Di sini terlihat bahwa DataFrame memiliki 9836 baris dan 33 kolom.
+
 3.16.9 Training Apriori
+
 Selanjutnya pada DataFrame perlu dilakukan pemisahan data dengan kode program sebagai berikut.
 from apyori import apriori
 rules = apriori(transactions = transactions, min_support = 0.003, min_confidence = 0.2, min_lift = 3, min_length = 2, max_length = 2)
@@ -591,12 +628,16 @@ RelationRecord(items=frozenset({'processed cheese', 'white bread'}), support=0.0
 RelationRecord(items=frozenset({'rice', 'root vegetables'}), support=0.003199573390214638, ordered_statistics=[OrderedStatistic(items_base=frozenset({'rice'}), items_add=frozenset({'root vegetables'}), confidence=0.4067796610169492, lift=3.680644435811985)])
 RelationRecord(items=frozenset({'sliced cheese', 'sausage'}), support=0.006932409012131715, ordered_statistics=[OrderedStatistic(items_base=frozenset({'sliced cheese'}), items_add=frozenset({'sausage'}), confidence=0.30057803468208094, lift=3.239419307687197)])
 RelationRecord(items=frozenset({'tropical fruit', 'turkey'}), support=0.0030662578322890282, ordered_statistics=[OrderedStatistic(items_base=frozenset({'turkey'}), items_add=frozenset({'tropical fruit'}), confidence=0.3484848484848485, lift=3.3172396554376253)])
+
 Keterangan kode:
+
 Kode ‘results = list(rules)’ digunakan untuk mengonversi hasil aturan asosiasi yang dihasilkan oleh algoritma Apriori (yang disimpan dalam bentuk generator) menjadi list yang lebih mudah digunakan dan diakses. Ketika algoritma Apriori dijalankan, hasilnya berupa objek generator, yang merupakan struktur data yang menghasilkan nilai-nilai secara lazy, artinya nilai-nilai baru dihasilkan saat kita mengaksesnya dan tidak semua nilai dihasilkan sekaligus pada awal.
 Ketika kita ingin menyimpan hasil aturan asosiasi untuk digunakan atau ditampilkan, seringkali lebih nyaman dan lebih mudah bekerja dengan list daripada generator. Dengan mengonversi hasil dari generator menjadi list menggunakan ‘list(rules)’, kita bisa dengan mudah mengakses dan menggunakan hasil aturan asosiasi secara keseluruhan tanpa harus mengkhawatirkan tentang cara kerja generator.
 Kode ‘for rule in results’, digunakan untuk melakukan iterasi (pengulangan) melalui setiap aturan asosiasi yang ada dalam ‘results’. Setiap aturan asosiasi akan menjadi elemen dari ‘rule’ pada setiap iterasi, sehingga Anda dapat mengakses dan melakukan tindakan terhadap setiap aturan secara terpisah.
 ‘print(rule)’ digunakan untuk mencetak atau menampilkan satu aturan asosiasi (dalam bentuk ‘RelationRecord’) ke dalam output konsol atau tampilan layar. Ketika kita melakukan iterasi melalui hasil algoritma Apriori, setiap aturan asosiasi akan menjadi nilai dari variabel ‘rule’, sehingga kita dapat mencetak atau menampilkan satu aturan asosiasi pada setiap iterasi.
+
 3.16.11 Merubah Dataset Ke Dalam Bentuk Kolom
+
 Untuk merubah dataset ke dalam bentuk kolom, berikut adalah kode programnya:
 def inspect(results):
     lhs         = [tuple(result[2][0][0])[0] for result in results]
@@ -617,7 +658,9 @@ Kode ‘confidences = [result[2][0][2] for result in results]’ digunakan untuk
 Kode ‘lifts = [result[2][0][3] for result in results]’ digunakan untuk mengumpulkan nilai lift dari setiap aturan asosiasi yang ada dalam hasil ‘results’ ke dalam sebuah list bernama ‘lifts’. Jadi, ‘lifts’ akan berisi daftar nilai lift dari setiap aturan asosiasi dalam ‘result’.
 Kode ‘return list(zip(lhs, rhs, supports, confidences, lifts))’ digunakan untuk menggabungkan atau mengelompokkan beberapa list ‘lhs’, ‘rhs’, ‘supports’, ‘confidences’, dan ‘lifts’ menjadi satu list berisi tupel-tupel yang berisi informasi yang relevan dari setiap aturan asosiasi dalam bentuk ‘(lhs, rhs, support, confidence, lift)’. Jadi, fungsi tersebut menggabungkan informasi dari ‘lhs’, ‘rhs’, ‘supports’, ‘confidences’, dan ‘lifts’ untuk setiap aturan asosiasi menjadi satu list yang berisi tupel-tupel, sehingga Anda dapat dengan mudah menyimpan dan mengelola informasi tersebut untuk analisis lebih lanjut atau tujuan lain yang relevan.
 Kode ‘resultsinDataFrame = pd.DataFrame(inspect(results), columns=['Left Hand Side', 'Right Hand Side', 'Support', 'Confidence', 'Lift'])’ digunakan untuk mengubah hasil analisis aturan asosiasi dari list ‘inspect(results)’ menjadi suatu DataFrame yang terstruktur dengan kolom-kolom yang sesuai. Jadi,  ‘resultsinDataFrame’ akan berisi DataFrame yang mengandung informasi lengkap dari setiap aturan asosiasi dalam results, dengan kolom-kolom yang sesuai, yaitu 'Left Hand Side', 'Right Hand Side', 'Support', 'Confidence', dan 'Lift'.
+
 3.16.12 Melihat Hasil
+
 print(resultsinDataFrame)
       
      Left Hand Side     Right Hand Side	         Support	Confidence	Lift
@@ -665,6 +708,7 @@ Keterangan kode:
 3.17 Kelebihan dan Kekurangan Association Rule Learning
 
 Beberapa kelebihan Association rule learning:
+
 1. Mudah dipahami.
 2. Mendukung penambangan data tidak terarah
 3. Bekerja pada catatan data panjang variabel dan perhitungan sederhana.
@@ -674,6 +718,7 @@ Beberapa kelebihan Association rule learning:
 7. Efisiensi Operasional: Dengan pemahaman yang lebih baik tentang pola pembelian pelanggan, bisnis dapat mengatur stok dan rantai pasokan dengan lebih efisien. Ini dapat mengurangi biaya operasional, menghindari kelebihan persediaan, dan memastikan ketersediaan produk yang tepat pada waktu yang tepat.
    
 Kekurangan Association rule learning:
+
 1. Peningkatan eksponensial dalam komputasi dengan sejumlah item (algoritma Apriori)
 2. Keterbatasan pada Data Terstruktur: Association Rule Learning umumnya bekerja lebih baik dengan data terstruktur yang memiliki atribut diskrit atau kategorik. Data yang kontinu atau memiliki atribut berkelanjutan mungkin membutuhkan pra-pemrosesan atau pendekatan lain sebelum dapat dianalisis dengan baik menggunakan aturan asosiasi.
 3. Masalah Spuriosity: Aturan asosiasi dapat menghasilkan aturan yang terlihat signifikan tetapi sebenarnya tidak bermakna atau hanya kebetulan. Ini dapat terjadi ketika terdapat hubungan yang tidak terduga dalam data yang tidak relevan secara praktis.
